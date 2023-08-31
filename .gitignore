@@ -1,0 +1,29 @@
+# Compiled binaries
+Binaries/
+
+# IDE-specific files
+__history/
+__recovery/
+*.identcache
+*.local
+*.dsk
+*.rsm
+*.rsc
+*.bdsproj.local
+*.ipch/
+
+# Delphi project files
+Project1.dproj
+
+# IDE project files
+__history/*.dproj
+__history/*.cbproj
+__recovery/*.dproj
+__recovery/*.cbproj
+*.dproj.local
+*.cbproj.local
+
+# Compiled help files
+Help/
+
+# Any other files/directories to exclude
