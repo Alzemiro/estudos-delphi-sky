@@ -13,7 +13,7 @@ __recovery/
 *.ipch/
 
 # Delphi project files
-Project1.dproj
+SkyInfo.dproj
 
 # IDE project files
 /__history/*.dproj
