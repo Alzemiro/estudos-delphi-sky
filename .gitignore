@@ -16,8 +16,8 @@ __recovery/
 Project1.dproj
 
 # IDE project files
-__history/*.dproj
-__history/*.cbproj
+/__history/*.dproj
+_history/*.cbproj
 __recovery/*.dproj
 __recovery/*.cbproj
 *.dproj.local
