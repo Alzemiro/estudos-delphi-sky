@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{8EBB86CD-5E82-4313-AC8C-3472F7D9B1B9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SkyInfo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SkyInfo">
+        <MSBuild Projects="SkyInfo.dproj"/>
+    </Target>
+    <Target Name="SkyInfo:Clean">
+        <MSBuild Projects="SkyInfo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SkyInfo:Make">
+        <MSBuild Projects="SkyInfo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SkyInfo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SkyInfo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SkyInfo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
